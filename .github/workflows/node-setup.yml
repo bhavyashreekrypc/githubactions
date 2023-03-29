@@ -1,0 +1,14 @@
+name: node-setup
+on:
+ push:
+  branches:
+   - master
+jobs:
+ setup:
+  runs_on: ubuntu:latest
+  steps:
+  -name: node version check
+   run: node -v
+   uses: action/node-setup@v1
+   with:
+    node: 16 
