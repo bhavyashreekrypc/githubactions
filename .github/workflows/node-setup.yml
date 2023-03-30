@@ -10,6 +10,6 @@ jobs:
   steps:
    - name: node version check
      run: node -v
-   - uses: actions/node-setup@v1
+   - uses: actions/setup-node@v2.5.2
      with:
-       node: 16 
+       node-version: 16.x
