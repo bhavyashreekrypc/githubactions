@@ -8,6 +8,10 @@ jobs:
  setup:
   runs-on: ubuntu-latest
   steps:
+   - name: directory
+     run: |
+      ls -a
+      pwd
    - name: node version check
      id: node
      run: node -v
