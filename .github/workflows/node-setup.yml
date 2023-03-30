@@ -8,7 +8,9 @@ jobs:
  setup:
   runs-on: ubuntu-latest
   steps:
-   - name: directory
+   - name: checkout
+     uses: actions/checkout@v2.7.0
+   - name: files lists
      run: |
       ls -a
       pwd
