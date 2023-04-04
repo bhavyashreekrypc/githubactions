@@ -1,0 +1,11 @@
+name: conatiner-image # using contaienr to run the job instaed of vm
+on:
+ workflow_dispatch:
+jobs:
+ container:
+  runs-on: ubuntu:latest
+  container:
+   image: node:alpine
+  steps: 
+    - name: node-version
+      run: node -v   
